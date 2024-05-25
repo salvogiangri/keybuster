@@ -6,7 +6,7 @@
 #include <skeymaster_defs.h>
 #include <skeymaster_utils.h>
 
-static size_t num_bytes(x)
+static size_t num_bytes(int x)
 {
     size_t n;
     if (0 == x) {
