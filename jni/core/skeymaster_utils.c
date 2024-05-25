@@ -673,6 +673,11 @@ KM_Result init_key_request(
         goto cleanup;
     }
 
+    if (0 != req->is_exportable && 0 != add_bool_to_param_set(param_set, KM_TAG_KNOX_OBJECT_PROTECTION_REQUIRED)) {
+        LOGE("failed to add %s", "KM_TAG_KNOX_OBJECT_PROTECTION_REQUIRED");
+        goto cleanup;
+    }
+
     if (-1 != req->enc_ver && 0 != add_int_to_param_set(param_set, KM_TAG_EKEY_BLOB_ENC_VER, req->enc_ver)) {
         LOGE("failed to add %s", "KM_TAG_EKEY_BLOB_ENC_VER");
         goto cleanup;

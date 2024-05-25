@@ -172,6 +172,7 @@ typedef enum keymaster_tag_t {
     KM_TAG_INTEGRITY_FLAGS = 0x300013a7,
     KM_TAG_EXPORTABLE = 0x7000025a,
     KM_TAG_ORIGIN_2 = 0x100002be,
+    KM_TAG_KNOX_OBJECT_PROTECTION_REQUIRED = 0x700007d0,    // KM_BOOL | 2000
     KM_TAG_USE_SECURE_PROCESSOR = 0x70000bb8                // KM_BOOL | 3000
 } keymaster_tag_t;
 
