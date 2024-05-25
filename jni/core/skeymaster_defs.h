@@ -171,7 +171,8 @@ typedef enum keymaster_tag_t {
     KM_TAG_EKEY_BLOB_HEK_RANDOMNESS = 0x90001392,
     KM_TAG_INTEGRITY_FLAGS = 0x300013a7,
     KM_TAG_EXPORTABLE = 0x7000025a,
-    KM_TAG_ORIGIN_2 = 0x100002be
+    KM_TAG_ORIGIN_2 = 0x100002be,
+    KM_TAG_USE_SECURE_PROCESSOR = 0x70000bb8                // KM_BOOL | 3000
 } keymaster_tag_t;
 
 typedef enum KM_ERROR {

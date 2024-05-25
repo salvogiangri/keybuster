@@ -842,6 +842,8 @@ char *get_tag_string(keymaster_tag_t tag)
             return "KM_TAG_EXPORTABLE";
         case KM_TAG_ORIGIN_2:
             return "KM_TAG_ORIGIN_2";
+        case KM_TAG_USE_SECURE_PROCESSOR:
+            return "KM_TAG_USE_SECURE_PROCESSOR";
         default:
             return "Unknown";
     }
